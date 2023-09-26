@@ -169,4 +169,16 @@ section{
 
 .thesis {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesis .item {
+    margin: 10px 0;
+    background-color: #141E46;
+    color: #FF6969;
+    width: 500px;
+    height: 200px;
 }
