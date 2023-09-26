@@ -179,6 +179,40 @@ section{
     margin: 10px 0;
     background-color: #141E46;
     color: #FF6969;
-    width: 500px;
+    width: 550px;
     height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item .image {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.item .image img{
+    height: 150px;
+    max-width: 100%;
+}
+
+
+.item .details {
+    height: 100%;
+    width: 60%;
+}
+
+.item .details h1{
+    margin-top: 10px;
+    width: 100%;
+    color: #FFF5E0;
+    text-align: center;
+}
+
+.item .details p{
+    margin-top: 10px;
+    width: 100%;
+    color: #FFF5E0;
+    text-align: center;
 }
