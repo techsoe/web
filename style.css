@@ -123,4 +123,14 @@ section{
     box-sizing: border-box;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #141E46;
+    color: #FFF5E0;
+    transition: ease-in 0.2s;
+}
+
+.about .text button:hover {
+    background-color: #FF6969;
+    color: #141E46;
 }
