@@ -138,3 +138,35 @@ section{
     background-color: #FF6969;
     color: #141E46;
 }
+
+.project{
+    display: flex;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.tech-stack h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.tech-stack ul {
+    list-style: none;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.thesis {
+    width: 50%;
+}
