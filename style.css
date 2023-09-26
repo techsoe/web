@@ -113,6 +113,10 @@ section{
     margin-bottom: 20px;
 }
 
+.about .text h1 span {
+    color:#FF6969;
+}
+
 .about .text p {
     font-style: italic;
     margin-bottom: 20px;
