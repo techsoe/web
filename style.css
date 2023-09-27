@@ -305,7 +305,46 @@ section#contact {
 }
 
 footer {
+    margin: 0;
+    padding: 0;
     height: 20vh;
     width: 100%;
     background-color: #0a0f22;
+}
+
+.foot {
+    max-width: 1180px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foot h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.foot ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.foot ul a{
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+.foot ul a:hover{
+    color: #FF6969;
+}
+
+.foot hr {
+    border: 1px solid rgb(29, 29, 29);
+    width: 30%;
+    margin: 0;
 }
