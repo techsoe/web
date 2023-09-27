@@ -42,7 +42,7 @@ header span {
 
 header nav{
     display: inline-block;
-    
+    margin-right: 10px;
 }
 
 header nav ul{
@@ -62,7 +62,6 @@ header nav ul li.menu-icon{
 }
 
 header nav ul li.menu-icon img {
-    margin: 0;
     padding: 0;
     max-width: 100%;
     height: 20px;
@@ -77,29 +76,6 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: white;
     border-radius: 10px;
-}
-
-/*Phone*/
-@media screen and (max-width: 600px) {
-
-    header nav ul li{
-        display: none;
-    }
-
-    header nav ul li.menu-icon{
-        display: inline-block;
-    }
-}
-
-/*tablet*/
-@media screen and (min-width: 992px) {
-    
-}
-
-/*Desktop*/
-@media screen and (min-width: 1200px) {
-    
-    
 }
 
 section {
@@ -129,6 +105,43 @@ section {
     border-radius: 10px;
     max-width: 100%;
     height: 600px;
+}
+
+/*Phone*/
+@media screen and (max-width: 600px) {
+
+    header nav ul li{
+        display: none;
+    }
+
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+}
+
+/*Desktop*/
+@media screen and (max-width: 992px) {
+
+    .image {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .intro, .about .image{
+        width: 90%;
+        
+    }
+    
+}
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+    
+    
 }
 
 .intro {
