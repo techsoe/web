@@ -245,82 +245,6 @@ section#project {
     border-radius: 0 10px 0 10px;
 }
 
-/*Phone*/
-@media screen and (max-width: 600px) {
-
-    header nav ul li{
-        display: none;
-    }
-
-    header nav ul li.menu-icon{
-        display: inline-block;
-    }
-
-    .project h1{
-        font-size: 40px;
-    }
-
-    .project ul li img{
-        display: none;
-    }
-
-    .project ul li .details h1 {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    .project ul.used {
-        margin-top: 10px;
-    }
-
-    .project ul.used li {
-        font-size: 12px;
-    }
-
-    .project ul li{
-        height: auto;
-    }
-}
-
-/*Desktop*/
-@media screen and (max-width: 992px) {
-
-    .image {
-        display: none;
-    }
-
-    .about {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about .intro, .about .image{
-        width: 80%;
-    }
-    
-    .project ul.item{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project ul li{
-        margin-bottom: 10px;
-        width: 80%;
-        height: 200px;
-        justify-content: center;
-    }
-
-    /**/
-    .project h1{
-        font-size: 80px;
-    }
-
-    .project ul li img{
-        display: none;
-    }
-
-}
-
 section#contact {
     background-color: #141E46;
 }
@@ -429,4 +353,83 @@ footer {
     border: 1px solid rgb(29, 29, 29);
     width: 30%;
     margin: 0;
+}
+
+/*Phone*/
+@media screen and (max-width: 600px) {
+
+    header nav ul li{
+        display: none;
+    }
+
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+
+    .project h1{
+        font-size: 40px;
+    }
+
+    .project ul li img{
+        display: none;
+    }
+
+    .project ul li .details h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .project ul.used {
+        margin-top: 10px;
+    }
+
+    .project ul.used li {
+        font-size: 12px;
+    }
+
+    .project ul li{
+        height: auto;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 992px){
+
+    .image {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .intro, .about .image{
+        width: 80%;
+    }
+    
+    .project ul.item{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project ul li{
+        margin-bottom: 10px;
+        width: 80%;
+        height: 200px;
+        justify-content: center;
+    }
+
+    .project h1{
+        font-size: 80px;
+    }
+
+    .project ul li img{
+        display: none;
+    }
+
+    .contact form {
+        width: 60%;
+    }
+
 }
