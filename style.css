@@ -131,8 +131,6 @@ section {
     margin-right: 10px;
 }
 
-
-
 .intro ul li:last-of-type{
     margin-right: 0;
 }
@@ -159,11 +157,14 @@ section#project {
     height: 100%;
     margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .project h1{
-    margin: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 100px;
     text-align: center;
 }
@@ -198,7 +199,6 @@ section#project {
     height: 300px;
     margin-top: 10px;
 }
-
 
 
 .project ul li .details h1 {
@@ -236,4 +236,65 @@ section#project {
 
 section#contact {
     background-color: #141E46;
+}
+
+.contact {
+    max-width: 1180px;
+    margin: auto;
+    color: #FF6969;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    margin: 0;
+    padding: 0;
+    color: #FF6969;
+    font-size: 50px;
+}
+
+.contact hr {
+    width: 10%;
+    margin: 20px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 300px;
+    width: 30%;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+
+.contact form input,.contact form textarea, .contact form button {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 5px;
+    border: none;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact form input.name{
+    border-radius: 10px 10px 0 0 ;
+}
+
+.contact form button.submit{
+    text-transform: uppercase;
+    border-radius:0 0 10px 10px;
+    margin-bottom: 0;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.contact form button.submit:hover{
+    background-color: #141E46;
+    color: #FF6969;
 }
