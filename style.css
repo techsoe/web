@@ -18,8 +18,12 @@ body{
 
 header {
     height: 80px;
+    width: 100%;
     background-color: #FF6969;
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 120;
+    top: 0;
 }
 
 .header {
@@ -68,7 +72,8 @@ header nav ul li a:hover {
 }
 
 section {
-    height: 100vh;
+    height: 110vh;
+    z-index: 0;
 }
 
 .about {
@@ -297,4 +302,10 @@ section#contact {
 .contact form button.submit:hover{
     background-color: #141E46;
     color: #FF6969;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #0a0f22;
 }
