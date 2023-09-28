@@ -105,6 +105,19 @@ section {
     border-radius: 10px;
     max-width: 100%;
     height: 600px;
+    animation: moveIt 1.5s forwards;
+}
+
+@keyframes moveIt {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 
 .intro {
@@ -119,17 +132,47 @@ section {
     margin: 0;
 }
 
+@keyframes header {
+    0%{
+        opacity: 0;
+        color: white;
+        transform: translateY(-100%);
+    }
+    100%{
+        color: #FF6969;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .intro h1 {
     font-size: 40px;
+    animation-name: header ;
+    animation-duration: 1s;
 }
+
 
 .intro h1 span {
     color: #FF6969;
+    animation-name: header ;
+    animation-duration: 2s;
 }
 
 .intro p{
     margin: 10px 0 20px 0;
     font-style: italic;
+    animation: pAnimation 1s;
+}
+
+@keyframes pAnimation {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .intro ul{
@@ -137,6 +180,18 @@ section {
     display: flex;
     list-style: none;
     padding: 0;
+    animation: ulAnimation 1s;
+}
+
+@keyframes ulAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .intro ul li{

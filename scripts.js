@@ -25,7 +25,6 @@ stopButton.onclick = function(){
     },1000)
 }
 
-
 function clock(){
         
     var date = new Date();
@@ -57,7 +56,7 @@ function showAlert(){
         alert(
             "Hello " + finalName.toUpperCase() + 
             "\nYour message is secured, please wait for a reply at " + finalEmail + 
-            "\nIf you want to know the time click TECHSOE"
+            "\nIf you want to know the time point at TECHSOE"
         );
     }
 }
