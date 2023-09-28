@@ -1,17 +1,39 @@
 
 var headerName = document.getElementById("headerName");
 
-headerName.onclick = function(){
+let time;
 
-    window.setInterval(function(){
+var stopButton = document.getElementById("stopTime");
+magic()
+function magic(){
+    stopButton.style.display = "none";
+}
 
-        var date = new Date();
-        var hour = date.getHours();
-        var minutes = date.getMinutes();
-        var seconds = date.getSeconds();
+headerName.onmouseenter = function(){
+    time = window.setInterval(function(){
+        clock();
+    },1000);
+    
+    stopButton.style = "display: flex";
+}
+ 
+stopButton.onclick = function(){
+    clearInterval(time);
+    setTimeout(function(){
+        magic()
+        headerName.innerHTML = "Techsoe"
+    },1000)
+}
 
-        headerName.innerHTML = dateFixer(hour) + ":" + dateFixer(minutes) + ":" + dateFixer(seconds);
-    }, 1000);
+
+function clock(){
+        
+    var date = new Date();
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+   headerName.innerHTML = (dateFixer(hour) + ":" + dateFixer(minutes) + ":" + dateFixer(seconds));
     
 }
 
@@ -39,3 +61,4 @@ function showAlert(){
         );
     }
 }
+
